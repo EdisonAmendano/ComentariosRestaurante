@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #333333;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #FFFFFF;
+        }
+
+        .container {
+            width: 400px;
+            padding: 40px;
+            background-color: #222222;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        .container h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #FFFFFF;
+        }
+
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Informe de Comentario</h1>
+        {% csrf_token %}
+        <p>El comentario ha sido:</p>
+        <p class="result">Clase: {{e.clase}}</p>
+        <p class="result">Certeza: {{e.certeza}}</p>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
