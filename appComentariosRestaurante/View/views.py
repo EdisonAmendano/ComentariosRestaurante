@@ -18,5 +18,5 @@ class Clasificacion():
             resul=modeloSNN.modeloSNN.predecirNUevoCliente(modeloSNN.modeloSNN,TEXTO)
         except:
             resul='Datos inválidos'
-        return render(request, "informe.html",{"e":resul})
+        return render(request, "Informe.html",{"e":resul})
     
